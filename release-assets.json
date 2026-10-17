@@ -1,0 +1,22 @@
+{
+  "product": "RADAR Research Evidence Workbench",
+  "main_version": "0.3.4",
+  "status": "trial_candidates_not_paid_release",
+  "assets": [
+    {
+      "file": "RADAR-链上研究证据工作台-0.3.4-候选.zip",
+      "role": "main_local_trial",
+      "bytes": 82130,
+      "members": 39,
+      "sha256": "de5174bf5a173d9c8aa79f2e78bf914d634971516064fb720caf729bf678d07b"
+    },
+    {
+      "file": "RADAR-权限阅读练习-中英社区包.zip",
+      "role": "optional_free_community_lesson",
+      "bytes": 48416,
+      "members": 27,
+      "sha256": "042e37b7658311869b0f13d245cb3842bbab286430cfb515ac219471c101f596"
+    }
+  ],
+  "publishing_this_manifest_does_not_publish_its_assets": true
+}
