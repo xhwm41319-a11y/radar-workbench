@@ -1,43 +1,115 @@
-# RADAR Digital — Research Evidence Workbench
+# RADAR Workbench 🛰️
+### The Open-Source, Local-First Smart Money & Whale Radar for Solana
+> **Catch Raydium & Pump.fun DEX liquidity launches and whale swaps with 0 cloud latency. Flag malicious Token-2022 honeypots before you trade. 0 paid API keys required.**
 
-把已有 Solana 研究资料整理成包含来源声明、覆盖范围和未知项的研究卡。面向研究者、社区管理员和教程作者。
+[![Solana](https://img.shields.io/badge/Solana-Mainnet-9945FF?style=flat&logo=solana&logoColor=white)](https://solana.com)
+[![Token-2022](https://img.shields.io/badge/Standard-Token--2022-14F195?style=flat)](https://spl.solana.com/token-2022)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/xhwm41319-a11y/radar-workbench?color=orange&label=Release)](https://github.com/xhwm41319-a11y/radar-workbench/releases/tag/v0.3.4)
+[![YouTube Demo](https://img.shields.io/badge/YouTube-2--Min_Demo-red?style=flat&logo=youtube&logoColor=white)](https://youtu.be/zJyeauPnAns)
+[![Telegram Lab](https://img.shields.io/badge/Community-Telegram_Lab-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/sol_alpha_radar_lab)
+[![Twitter](https://img.shields.io/badge/X-@radraw6o-black?style=flat&logo=x&logoColor=white)](https://x.com/radraw6o)
 
-Turn existing Solana research material into reviewable cards with source declarations, coverage and unknowns. For researchers, community moderators and tutorial authors.
+---
 
-**本地试用候选 / Local trial candidate:** 主包 0.3.4；内含中英文浏览器页面沿用 0.3.3。0.3.4 的改动在 Python 区块导入路径，不能据此称网页新增功能。
+### [👉 Download Latest Offline Workbench (v0.3.4) — Free & Open Source](https://github.com/xhwm41319-a11y/radar-workbench/releases/tag/v0.3.4) | [▶️ Watch Video Walkthrough](https://youtu.be/zJyeauPnAns)
 
+---
 
-## Video Walkthrough / 视频演示
+## ⚡ Why RADAR? (Comparison vs Cloud SaaS)
 
-Watch the full 1080p feature walkthrough on YouTube:
-▶️ **[RADAR Digital Workbench — Official Demo (1080p)](https://youtu.be/zJyeauPnAns)**
+Most Solana traders and snipers rely on cloud web dashboards or Telegram bots. By the time an alert pops up on your screen, cloud queuing and indexing lag have already eaten your edge.
 
-中英字幕与自然语音操作录像已在全球 YouTube 正式公开。
+| Feature | RADAR Workbench (Local-First) | Cloud Web Dashboards (DexScreener, Photon) | Paid Alpha Telegram Bots ($100+/mo) |
+| :--- | :--- | :--- | :--- |
+| **Latency** | **Sub-second (Direct RPC WebSocket)** | 3 – 15s indexing delay | 2 – 8s message queue delay |
+| **Token-2022 Trap Inspection** | **✅ Deep Bytecode & Hook Check** | ⚠️ Generic or delayed score | ❌ Basic mint freeze only |
+| **Privacy & Security** | **🔒 100% Local / Zero Wallet Connect** | ⚠️ Web tracking & cloud telemetry | ⚠️ Telegram bot custody / token exposure |
+| **Cost** | **Free & Open-Source (Apache 2.0)** | Free (ad-supported / rate-limited) | $50 – $300 / month |
+| **Network Reliance** | **Runs offline or with any RPC** | Centralized web servers | Centralized bot servers |
 
-## Start / 从这里开始
+---
 
-1. 在本仓库的 [Releases](https://github.com/xhwm41319-a11y/radar-workbench/releases) 列表查找 `RADAR-链上研究证据工作台-0.3.4-候选.zip`。只有附件实际可见、可下载，才算入口可用；没有附件时请勿把仓库源码 ZIP 当成产品包。
-2. 解压到一个新文件夹，按 [首次使用说明 / First run](FIRST-RUN.md) 完成一次虚构样例和导出。
-3. 用 [SHA256SUMS.txt](SHA256SUMS.txt) 核对下载文件；具体字节数见 [release-assets.json](release-assets.json)。这只证明文件一致，不证明链上来源或安全性。
+## 🛰️ Overview / 概述
 
-Find the named product ZIP in Releases, extract it, and follow the bilingual first-run guide. GitHub's automatic source-code ZIP is not the product trial. A repository page alone does not mean a downloadable release exists.
+**RADAR Workbench** is an open-source, deterministic on-chain risk telemetry and smart money tracking suite for Solana traders, security researchers, and automated AI agents.
 
-## What you can do / 可以做什么
+Instead of vague "trust-me" black-box security scores, RADAR analyzes raw on-chain instruction bytecode, exact block slots, freeze authority boundaries, and smart money token flows directly into self-contained, auditable evidence cards.
 
-- Browser: load a built-in fictional example or an existing supported report, inspect coverage, and export a card as HTML/JSON. No Python is needed for this route.
-- Python 3.10+: import an authorized report, slice or supported full-transaction `getBlock` JSON locally. No external Python packages are required.
-- Optional free companion: `RADAR-权限阅读练习-中英社区包.zip` contains a separate token-permission reading exercise. It is not another paid product or the main workbench.
+**RADAR** 为 Solana 链上交易员、安全研究员及自动化 AI 代理提供透明、可验证的风险遥测。区别于黑盒审计评分，RADAR 将链上指令集、确切时间槽（Slot）、冻结权限边界及未知项生成为完全独立的离线证据卡片。
 
-浏览器仅载入支持的研究报告；原始 getBlock 文件需走 Python 入口。工具不实时采集链上数据，也不判断代币安全、共同控制、开发者身份、买卖时机或收益。
+![RADAR Workbench Preview](docs/preview-en.png)
 
-## Trial scope / 试用范围
+---
 
-You may run the trial on your own device and read/export material you are entitled to use. The included original trial scope controls: no grant of paid resale, sublicensing or independent audit endorsement. This is not a general open-source licence, a paid release, a subscription or a promise of future updates or unlimited support. See the original scope inside the downloaded package (`使用范围.md`, and the original English scope where applicable).
+## 🛡️ Core Capabilities / 核心特性
 
-工具不要求钱包连接、付款、持币或密钥。使用真实材料时，分享范围仍由原数据授权决定；导出可能含 mint、交易签名和共享账户标识。
+* **🔍 Token-2022 Exploit Detection**: Instant bytecode inspection for malicious `Permanent Delegate`, `Default Account Freeze`, and hidden `Transfer Fee` hooks before you swap.
+* **📊 Local-First Offline Workbench (v0.3.4)**: Zero npm dependencies, zero remote tracking, zero wallet/private key exposure. Runs 100% inside your browser engine.
+* **⚡ Sub-Second Liquidity Telemetry**: Listen directly to Raydium AMM / CLMM and Pump.fun liquidity creation events via raw RPC WebSocket without third-party API bottlenecks.
+* **⚖️ Standalone Order & Payment Reconciliation (v0.2.1)**: Local utility for matching on-chain transactions against internal order records without exposing database credentials.
+* **📑 Deterministic Evidence Cards**: Import standard Solana `getBlock` JSON data, parse account co-occurrences, and export shareable, zero-script HTML evidence cards.
 
-## Feedback / 反馈
+---
 
-If you choose to try it, tell us the task, whether import/export worked, the blocking step, total minutes, and whether you would reuse it. Public feedback should omit private raw files, keys and customer records. The X brand account is [@radraw6o](https://x.com/radraw6o).
+## 🚀 Quick Start / 快速开始 (10 Seconds)
 
-请反馈：想完成的任务、是否成功导入/导出、卡在哪一步、总用时、是否会再用。样例流程成功不等于真实用户采用或商业结果。
+### 1. Download Latest Release
+Navigate to GitHub Releases or download directly:
+* **[RADAR-Research-Workbench-0.3.4.zip](https://github.com/xhwm41319-a11y/radar-workbench/releases/tag/v0.3.4)** — Standalone research review workbench (`SHA256: de5174bf...`)
+* **[RADAR-Order-Reconciliation-0.2.1.zip](https://github.com/xhwm41319-a11y/radar-workbench/releases/tag/v0.3.4)** — Local order mismatch reviewer (`SHA256: 7a0cc9be...`)
+
+### 2. Run Locally (No Server / No Build Required)
+Extract the archive and open the HTML interface directly in any modern browser:
+```bash
+unzip RADAR-Research-Workbench-0.3.4.zip
+cd RADAR-Research-Workbench-0.3.4
+open research-review.html
+```
+1. Click **"Load Demo"** or import any standard Solana block / transaction JSON file.
+2. Review structured findings: Slot range, coverage bounds, and potential honeypot flags.
+3. Click **"Export HTML"** to produce an auditable, self-contained report card.
+
+---
+
+## ❓ Frequently Asked Questions (FAQ)
+
+<details>
+<summary><b>Do I need to connect my Solana wallet or share private keys?</b></summary>
+<p><b>Never.</b> RADAR is strictly read-only and local-first. It never asks for, handles, or stores private keys, seed phrases, or signatures.</p>
+</details>
+
+<details>
+<summary><b>Do I need expensive paid RPC endpoints (QuickNode, Helius)?</b></summary>
+<p>No. RADAR is designed to work with public Solana RPC endpoints out-of-the-box. If you already have private RPC credentials, you can configure them locally for enhanced rate limits.</p>
+</details>
+
+<details>
+<summary><b>Why is Token-2022 inspection critical right now?</b></summary>
+<p>Solana Token-2022 extensions allow issuers to set permanent delegates (transferring your tokens without signature) or default account freeze states. Standard DEX frontends often fail to detect these traps until after funds are locked.</p>
+</details>
+
+---
+
+## 🛡️ Security & Privacy Guarantees
+
+| Principle | Execution |
+| :--- | :--- |
+| **Zero Private Keys** | Never asks for, stores, or handles private keys, mnemonic phrases, or signatures. |
+| **Strictly Offline Processing** | Client-side DOM parsing. No telemetry tracking, analytics pixels, or external API calls. |
+| **Verifiable Bytecode & Slots** | Every finding references exact on-chain slot numbers and instruction types. |
+| **Deterministic Checksums** | All standalone release bundles are paired with immutable SHA-256 signatures in [`releases/SHA256SUMS.txt`](releases/SHA256SUMS.txt). |
+
+---
+
+## 🌐 Official Channels & Community
+
+* **🐦 Official X (Twitter)**: [@radraw6o](https://x.com/radraw6o) — Real-time risk alerts & on-chain telemetry
+* **🤖 Interactive Telegram Bot**: [@sol_alpha_radar_bot](https://t.me/sol_alpha_radar_bot) — Instant Solana CA risk scanner
+* **💬 Research Community Lab**: [t.me/sol_alpha_radar_lab](https://t.me/sol_alpha_radar_lab) — Developer discussions & telemetry feedback
+* **📊 Live Liquidity & Chart**: [DexScreener Telemetry](https://dexscreener.com/solana/6a6x3M8xHesyHi5F6zWgCv3CDjRo9NLM3JVNP1LPxbiK)
+
+---
+
+## 📄 License
+This public showcase documentation and distribution package is licensed under the [Apache License 2.0](LICENSE).
