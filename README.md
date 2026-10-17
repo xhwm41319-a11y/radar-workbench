@@ -6,6 +6,14 @@ Turn existing Solana research material into reviewable cards with source declara
 
 **本地试用候选 / Local trial candidate:** 主包 0.3.4；内含中英文浏览器页面沿用 0.3.3。0.3.4 的改动在 Python 区块导入路径，不能据此称网页新增功能。
 
+
+## Video Walkthrough / 视频演示
+
+Watch the full 1080p feature walkthrough on YouTube:
+▶️ **[RADAR Digital Workbench — Official Demo (1080p)](https://youtu.be/zJyeauPnAns)**
+
+中英字幕与自然语音操作录像已在全球 YouTube 正式公开。
+
 ## Start / 从这里开始
 
 1. 在本仓库的 [Releases](https://github.com/xhwm41319-a11y/radar-workbench/releases) 列表查找 `RADAR-链上研究证据工作台-0.3.4-候选.zip`。只有附件实际可见、可下载，才算入口可用；没有附件时请勿把仓库源码 ZIP 当成产品包。
